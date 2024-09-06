@@ -1,0 +1,56 @@
+@import url('./base/reset-syle.css');
+@import url('./header.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 12.2% 87.8%;
+    align-items: center;
+}
+
+.form{
+    height: 85%;
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px 10px;
+    box-shadow: 0 0 5px #525252;
+}
+
+.form > img {
+    width: 40%;
+}
+
+.form__inputs {
+    display: grid;
+    grid-template-rows: 20% 10% 10% 5% 20% 5%;
+    gap: 5%;
+    font-size: 18px;
+    place-items: center;
+    width: 60%;
+}
+
+.form__inputs > input{
+    border: 1px solid #949494;
+    height: 18px;
+    padding: 24px 12px;
+    width: 80%;
+}
+
+.form__inputs > button {
+    background-color: #343D61;
+    color: #fff;
+    padding: 8px;
+    width: 80%;
+}
+
+.form__inputs > a {
+    font-size: 16px;
+}
+
+.first-link{
+    position: relative;
+    top: -15px;
+    right: 20%;
+}

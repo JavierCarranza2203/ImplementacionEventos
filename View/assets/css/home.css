@@ -1,0 +1,125 @@
+@import url('./base/reset-syle.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 12.2% max-content 20.31%;
+}
+
+.carousel {
+    margin: 20px auto;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carousel > h2 {
+    font-size: 1.2em;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-between;
+    height: 40%;
+    gap: 2vw;
+}
+
+.products-container__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: max-content;
+    gap: 1.5%;
+}
+
+.products-container__row-item{
+    height: 100%;
+    box-shadow: 0 0 4px 2px #bebebe;
+    background-color: aqua;
+    display: grid;
+    transition: filter 0.3s ease;
+}
+
+.products-container__row-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.products-container > a{
+    font-size: 2.5vw;
+    align-self: center;
+}
+
+.products-container__row-item:hover{
+    box-shadow: 0 0 8px 4px #bebebe; /* Aumentar el tamaño de la sombra */
+    cursor: pointer; /* Cambiar el cursor al hacer hover */
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    width: calc(50% - 5px);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #001933; /* Cambia este color por el color que tenías antes */
+    color: #ffffff; /* Color del texto en el footer */
+}
+
+footer .footer-logo {
+    width: 130px;
+    height: 130px;
+}
+
+footer .contact-section {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto y los enlaces estén en columna */
+    align-items: center; /* Alinea el contenido al centro */
+    gap: 10px;
+}
+
+footer .contact-title {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff; /* Color del texto "Contáctanos" */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+footer .social-media {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para que los enlaces estén uno sobre el otro */
+    gap: 10px; /* Ajustar el espacio entre los enlaces */
+    align-items: center; /* Asegura que los enlaces estén centrados */
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+    text-align: center; /* Asegura que el texto del enlace esté centrado */
+}
+
+footer .social-media a:hover {
+    color: #007bff; /* Cambia este color por el que prefieras para el hover */
+}
+
+footer .social-media i {
+    font-size: 1.5em;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="View/assets/css/login.css">
+    <script src="https://kit.fontawesome.com/f8571caff0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/ChanzaShop/App/"><img src="View/assets/icons/chanza_logo.png" alt="Logo" style="width: 100px; height: 60px;"></a> 
+
+        <div class="header__icons-container">
+            <a href="shopping-car.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+    </header>
+    <form id="loginForm" class="form">
+        <img src="View/assets/icons/background-login.png">
+
+        <div class="form__inputs">
+            <h1 class="form__h1">INICIAR SESIÓN</h1>
+
+            <input type="text" id="txtUsuario" placeholder="Usuario">
+            <input type="password" id="txtPassword" placeholder="Contraseña">
+            <a href="#" class="first-link"></a>
+
+            <button type="submit">¡Ingresar ahora!</button>
+
+            <a href="crearcuenta.html" class="last-link">Registrese aquí</a>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</html>
